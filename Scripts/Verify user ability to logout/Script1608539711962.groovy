@@ -18,8 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(GlobalVariable.URL)
 
-WebUI.maximizeWindow()
-
 WebUI.click(findTestObject('HomePage/btn_lang'))
 
 WebUI.click(findTestObject('HomePage/btn_menu'))
@@ -44,7 +42,7 @@ WebUI.click(findTestObject('Settings/link_logout'))
 
 WebUI.click(findTestObject('HomePage/btn_menu'))
 
-WebUI.verifyTextPresent('Signout', false)
+WebUI.verifyTextPresent('Sign in | Register', false)
 
 WebUI.closeBrowser()
 
